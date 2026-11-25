@@ -13,7 +13,7 @@
 **GHI CHU DA AN DANH**
 
 ```text
-Khán giả [TEN_KHACH], số điện thoại 0987 654 321, số [CCCD_MA_DINH_DANH] , email [TEN_gmail.com] , đặt 3 vé gói SVT trận bán kết Cúp Sao Vàng ngày 18/12/2026 cho 2 người lớn và 1 trẻ em 9 tuổi. Khán giả đã chuyển khoản đặt cọc 1.500.000 đồng. Khán giả yêu cầu 3 ghế ngồi cạnh nhau gần lối đi
+Khán giả [TEN_KHACH], số điện thoại [0000_000_000], số [CCCD_MA_DINH_DANH] , email [TEN_gmail.com] , đặt 3 vé gói SVT trận bán kết Cúp Sao Vàng ngày 18/12/2026 cho 2 người lớn và 1 trẻ em 9 tuổi. Khán giả đã chuyển khoản đặt cọc 1.500.000 đồng. Khán giả yêu cầu 3 ghế ngồi cạnh nhau gần lối đi
 ```
 
 ### b) Hai câu lệnh chống ảo giác
