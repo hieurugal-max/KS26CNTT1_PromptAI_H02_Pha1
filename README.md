@@ -98,6 +98,26 @@ Chuyển từng tin nhắn thành một mảng JSON, giữ đúng thứ tự TN1
 **PROMPT**
 
 ```text
+Hãy là một nhân viên phụ trách quản lý bán vé báo cáo giá của Ban tổ chức giải bóng đá Cúp Sao Vàng hãy tính tổng tiền yêu cầu báo giá dựa trên :
+
+"BẢNG GIÁ VÉ (đồng/người lớn)
+SVT – Sân Vận Động: 1.200.000
+FZ – Fan Zone: 800.000
+VIP – Khán đài VIP: 2.500.000
+
+QUY TẮC TÍNH GIÁ
+1. Trẻ em từ 5 đến 11 tuổi tính 70% giá người lớn. Trẻ dưới 5 tuổi miễn phí.
+2. Nhóm từ 5 người lớn trở lên được giảm 5% trên tiền vé (tiền người lớn + tiền trẻ em).
+3. Phụ thu khu ghế ưu tiên: 300.000 đồng/người. Phụ thu không được giảm giá.
+4. Tổng tiền = tiền vé sau giảm + phụ thu.
+
+YÊU CẦU BÁO GIÁ
+Nhóm cổ động viên đi xem trận bán kết, mua gói SVT, gồm 5 người lớn, 2 trẻ em (8 tuổi và 10 tuổi) và 1 bé 3 tuổi. Có 1 người lớn chọn khu ghế ưu tiên"
+
+yêu cầu :
+
+suy luận từng bước theo thứ tự tiền người lớn → tiền trẻ em → tiền vé → giảm giá nhóm → phụ thu → tổng tiền, mỗi bước ghi phép tính; dòng cuối có dạng [RESULT: <tổng tiền> đồng].
+lưu ý: không them những cái không cần thiết không tự bịa và dựa trên những thông tin đã đưa
 
 ```
 
