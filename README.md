@@ -98,7 +98,7 @@ Chuyển từng tin nhắn thành một mảng JSON, giữ đúng thứ tự TN1
 **PROMPT**
 
 ```text
-Hãy là một nhân viên phụ trách quản lý bán vé báo cáo giá của Ban tổ chức giải bóng đá Cúp Sao Vàng hãy tính tổng tiền yêu cầu báo giá dựa trên :
+a) Hãy là một nhân viên phụ trách quản lý bán vé báo cáo giá của Ban tổ chức giải bóng đá Cúp Sao Vàng hãy tính tổng tiền yêu cầu báo giá dựa trên :
 
 "BẢNG GIÁ VÉ (đồng/người lớn)
 SVT – Sân Vận Động: 1.200.000
@@ -118,7 +118,41 @@ yêu cầu :
 
 suy luận từng bước theo thứ tự tiền người lớn → tiền trẻ em → tiền vé → giảm giá nhóm → phụ thu → tổng tiền, mỗi bước ghi phép tính; dòng cuối có dạng [RESULT: <tổng tiền> đồng].
 lưu ý: không them những cái không cần thiết không tự bịa và dựa trên những thông tin đã đưa
+b) **1. Tiền người lớn:**
 
+5 × 1.200.000 = 6.000.000 đồng
+
+**2. Tiền trẻ em:**
+
+- Trẻ 8 tuổi: 1.200.000 × 70% = 840.000 đồng
+- Trẻ 10 tuổi: 1.200.000 × 70% = 840.000 đồng
+- Trẻ 3 tuổi: Miễn phí = 0 đồng
+
+Tổng tiền trẻ em: 840.000 + 840.000 + 0 = 1.680.000 đồng
+
+**3. Tiền vé:**
+
+6.000.000 + 1.680.000 = 7.680.000 đồng
+
+**4. Giảm giá nhóm:**
+
+Nhóm có 5 người lớn nên được giảm 5%.
+
+7.680.000 × 5% = 384.000 đồng
+
+Tiền vé sau giảm:
+
+7.680.000 - 384.000 = 7.296.000 đồng
+
+**5. Phụ thu:**
+
+1 × 300.000 = 300.000 đồng
+
+**6. Tổng tiền:**
+
+7.296.000 + 300.000 = 7.596.000 đồng
+
+**[RESULT: 7.596.000 đồng]**
 ```
 
 ## 4.4. Dây chuyền xử lý khiếu nại (Prompt Chaining)
